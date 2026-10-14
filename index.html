@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Belajar variable JavaScript dari dasar melalui materi, contoh kode, dan latihan interaktif.">
+  <title>Variable JavaScript — Belajar dari Dasar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#beranda"><span class="brand-icon">JS</span><span>Code<span class="brand-accent">Start</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+    <nav id="navMenu">
+      <a href="#materi">Materi</a><a href="#contoh">Contoh Kode</a><a href="#latihan">Latihan</a>
+      <a class="nav-cta" href="#mulai">Mulai Belajar <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="beranda">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> DASAR-DASAR JAVASCRIPT</div>
+        <h1>Kenalan dengan<br><span class="gradient-text">Variable.</span><br>Mulai bikin sesuatu.</h1>
+        <p class="hero-desc">Pahami cara menyimpan data di JavaScript, kenali <code>let</code> dan <code>const</code>, lalu coba langsung lewat latihan interaktif.</p>
+        <div class="hero-actions"><a class="button primary" href="#materi">Mulai belajar <span>→</span></a><a class="text-link" href="#contoh">Lihat contoh kode <span>↘</span></a></div>
+        <div class="hero-stats"><div><strong>01</strong><span>Materi dasar</span></div><div><strong>03</strong><span>Konsep utama</span></div><div><strong>∞</strong><span>Kesempatan mencoba</span></div></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="floating-tag tag-top">const <span>✓</span></div>
+        <div class="code-window">
+          <div class="window-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>belajar-variable.js</span><span class="window-status">● LIVE</span></div>
+          <div class="code-body">
+            <div><span class="line-no">01</span><span class="purple">const</span> <span class="blue">nama</span> <span class="muted">=</span> <span class="green">"Zaidan
+              "</span><span class="muted">;</span></div>
+            <div><span class="line-no">02</span><span class="purple">let</span> <span class="blue">nilai</span> <span class="muted">=</span> <span class="orange">85</span><span class="muted">;</span></div>
+            <div class="code-gap"></div>
+            <div><span class="line-no">04</span><span class="yellow">console</span><span class="muted">.</span><span class="blue">log</span><span class="muted">(</span><span class="blue">nama</span><span class="muted">);</span></div>
+            <div><span class="line-no">05</span><span class="yellow">console</span><span class="muted">.</span><span class="blue">log</span><span class="muted">(</span><span class="blue">nilai</span><span class="muted">);</span></div>
+          </div>
+          <div class="terminal"><div class="terminal-label"><span>TERMINAL</span><span>OUTPUT</span></div><p><span>›</span> Zaidan</p><p><span>›</span> 85</p><div class="terminal-cursor"></div></div>
+        </div>
+        <div class="floating-tag tag-bottom"><span class="green-dot"></span> Kode sederhana, hasil nyata</div>
+        <div class="spark spark-one">✳</div><div class="spark spark-two">✦</div>
+      </div>
+    </section>
+
+    <section class="learning-strip"><div><span class="strip-icon">⌘</span><span><b>Belajar dari dasar</b><small>Tanpa perlu pengalaman coding</small></span></div><div><span class="strip-icon">⌁</span><span><b>Contoh mudah dipahami</b><small>Lihat kode dan hasilnya</small></span></div><div><span class="strip-icon">↗</span><span><b>Langsung praktik</b><small>Coba sendiri di browser</small></span></div></section>
+
+    <section class="section-wrap content-section" id="materi">
+      <div class="section-heading"><div><div class="eyebrow">01 — KONSEP DASAR</div><h2>Variable itu apa, sih?</h2></div><p>Anggap variable seperti kotak berlabel yang menyimpan data agar bisa dipakai kembali oleh program.</p></div>
+      <div class="concept-grid">
+        <article class="concept-card variable-card"><div class="card-number">A / VARIABLE</div><div class="box-illustration"><div class="box-label">nama</div><div class="box-value">"Zaidan"</div><div class="box-base"></div></div><h3>Tempat menyimpan data</h3><p>Nama, umur, nilai, dan informasi lain bisa disimpan dalam variable.</p><code>let nama = "Zaidan";</code></article>
+        <article class="concept-card"><div class="card-number">B / LET</div><div class="concept-symbol let-symbol">↻</div><h3>Nilainya bisa berubah</h3><p>Gunakan <code>let</code> saat data mungkin perlu diperbarui selama program berjalan.</p><code>let nilai = 80;<br>nilai = 90;</code></article>
+        <article class="concept-card const-card"><div class="card-number">C / CONST</div><div class="concept-symbol const-symbol">⌑</div><h3>Nilainya tetap</h3><p>Gunakan <code>const</code> saat variable tidak perlu diberi nilai baru.</p><code>const sekolah = "SMK";</code></article>
+      </div>
+    </section>
+
+    <section class="practice-section" id="contoh"><div class="section-wrap practice-grid">
+      <div><div class="eyebrow">02 — LIHAT CARA KERJANYA</div><h2>Kode kecil.<br><span class="gradient-text">Pemahaman besar.</span></h2><p class="section-desc">Kode di bawah menyimpan nama, kelas, dan umur. Perhatikan bagaimana <code>console.log()</code> menampilkan nilai variable.</p>
+        <ul class="check-list"><li><span>✓</span> Teks ditulis menggunakan tanda kutip</li><li><span>✓</span> Angka ditulis tanpa tanda kutip</li><li><span>✓</span> Nama variable harus mengikuti aturan JavaScript</li></ul>
+      </div>
+      <div class="editor-card"><div class="editor-head"><div class="window-dots"><i></i><i></i><i></i></div><span>profil-siswa.js</span><span class="editable-label">CONTOH</span></div><pre><span class="purple">let</span> nama = <span class="green">"Zaidan"</span>;
+<span class="purple">let</span> kelas = <span class="green">"Z RPL 2"</span>;
+<span class="purple">let</span> umur = <span class="orange">16</span>;
+
+<span class="yellow">console</span>.log(nama);
+<span class="yellow">console</span>.log(kelas);
+<span class="yellow">console</span>.log(umur);</pre><div class="editor-output"><div class="output-heading"><span>OUTPUT CONSOLE</span><span class="success-label">● Berhasil</span></div><p>Zaidan</p><p>Z RPL 2</p><p>16</p></div></div>
+    </div></section>
+
+    <section class="section-wrap content-section rules-section">
+      <div class="section-heading"><div><div class="eyebrow">03 — TIPS PENTING</div><h2>Nama variable yang benar</h2></div><p>Pilih nama yang jelas dan mudah dibaca. JavaScript membedakan huruf besar dan kecil.</p></div>
+      <div class="rules-grid"><div class="rule-panel good"><div class="rule-title"><span>✓</span> Boleh digunakan</div><code>nama</code><code>namaSiswa</code><code>nama_siswa</code><code>nilai1</code></div><div class="rule-panel bad"><div class="rule-title"><span>×</span> Jangan digunakan</div><code>1nama <small>diawali angka</small></code><code>nama siswa <small>mengandung spasi</small></code><code>nama-siswa <small>mengandung tanda hubung</small></code></div></div>
+    </section>
+
+    <section class="quiz-section" id="latihan"><div class="section-wrap quiz-wrap"><div class="eyebrow">04 — SAATNYA MENCOBA</div><h2>Sudah paham? <span class="gradient-text">Buktikan!</span></h2><p class="quiz-intro">Pilih jawaban yang paling tepat. Tenang, ini latihan, bukan ujian.</p>
+      <div class="quiz-card" id="quizCard"><div class="quiz-progress"><span>LATIHAN CEPAT</span><span id="questionCount">PERTANYAAN 1 DARI 3</span></div><div class="progress-track"><div id="progressBar"></div></div><h3 id="questionText">Keyword mana yang cocok untuk nilai yang bisa berubah?</h3><div class="answer-list" id="answerList"><button class="answer-option" data-answer="0"><span class="answer-letter">A</span> const</button><button class="answer-option" data-answer="1"><span class="answer-letter">B</span> let</button><button class="answer-option" data-answer="2"><span class="answer-letter">C</span> console</button></div><div class="quiz-feedback" id="quizFeedback" aria-live="polite"></div><button class="button primary quiz-next" id="nextQuestion" disabled>Jawaban berikutnya →</button></div>
+    </div></section>
+
+    <section class="final-cta section-wrap" id="mulai"><div class="cta-orb"></div><div class="eyebrow">LANGKAH SELANJUTNYA</div><h2>Kesalahan itu bagian<br>dari proses belajar.</h2><p>Jangan takut melihat error. Baca pesannya, cari penyebabnya, lalu coba perbaiki. Begitulah programmer berkembang.</p><a class="button primary" href="#materi">Ulangi materi <span>↑</span></a><span class="cta-code">console.log("Semangat coding!");</span></section>
+  </main>
+  <footer><a class="brand" href="#beranda"><span class="brand-icon">JS</span><span>Code<span class="brand-accent">Start</span></span></a><span>Belajar JavaScript, selangkah demi selangkah.</span><a href="#beranda">Kembali ke atas ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
